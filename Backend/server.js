@@ -8,7 +8,7 @@ const userRouter = require('./routes/userRoute')
 const jobRouter = require('./routes/jobRoutes')
 
 app.use(cors({
-    origin:"https://hire-flow-green.vercel.app/",
+    origin:"https://hire-flow-green.vercel.app",
   credentials:true
 }))
 app.use(express.json())
