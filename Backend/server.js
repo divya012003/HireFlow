@@ -12,11 +12,13 @@ app.use(cors({
   credentials:true
 }))
 app.use(express.json())
+// datbase
+connectDB()
+
 app.use('/api',userRouter)
 app.use('/api/jobs',jobRouter)
 
-// datbase
-connectDB()
+
 
 
 
