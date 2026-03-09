@@ -7,7 +7,10 @@ require("dotenv").config()
 const userRouter = require('./routes/userRoute')
 const jobRouter = require('./routes/jobRoutes')
 
-app.use(cors())
+app.use(cors({
+    origin:"https://hireflow.vercel.app",
+  credentials:true
+}))
 app.use(express.json())
 app.use('/api',userRouter)
 app.use('/api/jobs',jobRouter)
