@@ -43,6 +43,8 @@ const Register = () => {
       <h2 className='text-2xl font-bold text-center mb-6'>
         Create Account
       </h2>
+      console.log(api.defaults.baseURL)
+      
 
       <form onSubmit={handleSubmit} className='space-y-4'>
 
